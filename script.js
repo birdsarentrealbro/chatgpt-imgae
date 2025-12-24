@@ -8,7 +8,7 @@ document.getElementById('generate').addEventListener('click', async () => {
   if (file) formData.append('image', file);
   formData.append('prompt', prompt);
 
-  const response = await fetch('https://YOUR_VERCEL_FUNCTION_URL/generate', {
+  const response = await fetch('https://chatgpt-imgae-vtcn.vercel.app/generate', {
     method: 'POST',
     body: formData
   });
